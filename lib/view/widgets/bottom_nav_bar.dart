@@ -1,14 +1,13 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../screens/discover_screen.dart';
-import '../screens/home_screen.dart';
+import '../screens/discover/discover_screen.dart';
+import '../screens/home/home_screen.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
-    Key? key,
+    super.key,
     required this.index,
-  }) : super(key: key);
+  });
 
   final int index;
 

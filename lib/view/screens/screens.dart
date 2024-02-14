@@ -1,3 +1,13 @@
-export 'article_screen.dart';
-export 'discover_screen.dart';
-export 'home_screen.dart';
+export 'article/article_screen.dart';
+export 'article/widgets/article_body.dart';
+export 'article/widgets/article_headline.dart';
+export 'discover/discover_screen.dart';
+export 'discover/widgets/discover_headline.dart';
+export 'discover/widgets/search_bar.dart';
+export 'discover/widgets/category_list.dart';
+export 'discover/widgets/category_wise_news.dart';
+export 'home/home_screen.dart';
+export 'splash/splash_screen.dart';
+export 'home/widgets/home_heading.dart';
+export 'home/widgets/home_carousel.dart';
+export 'home/widgets/home_news_listview.dart';

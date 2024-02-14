@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'view/screens/screens.dart';
 
 void main() {
@@ -6,21 +7,21 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'News App',
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      initialRoute: '/',
+      initialRoute: '/splash',
       routes: {
         HomeScreen.routeName: (context) => const HomeScreen(),
+        SplashScreen.routeName: (context) => const SplashScreen(),
         DiscoverScreen.routeName: (context) => const DiscoverScreen(),
-        ArticleScreen.routeName: (context) => const ArticleScreen(),
       },
     );
   }
